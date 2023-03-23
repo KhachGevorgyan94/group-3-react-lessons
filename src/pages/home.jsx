@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import UsersList from "../components/users-list";
+import ReasonsSection from "../components/reasons-section";
 
 
 /**
@@ -28,7 +29,8 @@ class HomePage extends React.Component {
   render() {
     return <>
       <Header/>
-      <UsersList/>
+      {/*<UsersList/>*/}
+      <ReasonsSection/>
       <Footer/>
     </>
   }
