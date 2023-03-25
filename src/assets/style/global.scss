@@ -5,3 +5,14 @@
   margin    : 0 auto;
   padding   : 0 15px;
 }
+
+.G-input {
+  width   : 100%;
+
+  input {
+    width         : 100%;
+    padding       : 0 15px;
+    height        : 38px;
+    border-radius : 4px;
+  }
+}

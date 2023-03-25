@@ -1,0 +1,32 @@
+.P-counter-box {
+  padding       : 20px;
+  border-radius : 12px;
+  box-shadow    : 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  width         : calc(25% - 30px);
+
+
+  .P-counter-value {
+    display         : flex;
+    justify-content : center;
+    flex-direction  : column;
+    align-items     : center;
+
+    span {
+      color     : black;
+      font-size : 30px;
+      display   : block;
+    }
+  }
+
+  .P-action-block {
+    display         : flex;
+    justify-content : center;
+
+    button {
+      margin           : 0 10px;
+      width            : 40px;
+      height           : 30px;
+      background-color : #58A5FF;
+    }
+  }
+}

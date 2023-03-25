@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import UsersList from "../components/users-list";
 import ReasonsSection from "../components/reasons-section";
+import InputSections from "../components/input-sections";
 
 
 /**
@@ -30,7 +31,8 @@ class HomePage extends React.Component {
     return <>
       <Header/>
       {/*<UsersList/>*/}
-      <ReasonsSection/>
+      {/*<ReasonsSection/>*/}
+      <InputSections/>
       <Footer/>
     </>
   }
