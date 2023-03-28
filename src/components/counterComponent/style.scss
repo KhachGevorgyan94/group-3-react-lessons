@@ -22,6 +22,10 @@
     display         : flex;
     justify-content : center;
 
+    &.P-red {
+      background-color : red;
+    }
+
     button {
       margin           : 0 10px;
       width            : 40px;
