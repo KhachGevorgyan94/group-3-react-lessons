@@ -6,3 +6,17 @@
   background-size     : contain;
   background-repeat   : no-repeat;
 }
+
+.P-active{
+  color: #34cce7;
+}
+
+.P-menu{
+  a{
+    color: black;
+
+    &.P-active{
+      color: #34cce7;
+    }
+  }
+}

@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
-import UsersList from "../components/users-list";
-import ReasonsSection from "../components/reasons-section";
-import InputSections from "../components/input-sections";
-import CounterComponent from "../components/counterComponent";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+import UsersList from "../../components/users-list";
+import ReasonsSection from "../../components/reasons-section";
+import InputSections from "../../components/input-sections";
+import CounterComponent from "../../components/counterComponent";
 
 
 /**
@@ -30,11 +30,9 @@ import CounterComponent from "../components/counterComponent";
 class HomePage extends React.Component {
   render() {
     return <>
-      {/*<Header/>*/}
-      {/*<UsersList/>*/}
-      {/*<ReasonsSection/>*/}
-      {/*<InputSections/>*/}
-      {/*<Footer/>*/}
+      <UsersList/>
+      <ReasonsSection/>
+      <InputSections/>
       <CounterComponent/>
     </>
   }

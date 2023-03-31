@@ -4,6 +4,8 @@ import './assets/style/index.scss'
 import './assets/icon/style.css'
 import App from "./App";
 
+import {BrowserRouter} from 'react-router-dom'
+
 /**
  * React project@ sksum e ashxatel index.js  faylis, aysinqn
  * startvi  ket@ vor sksvum e asxhatel  da src  papki mej gtnvox index.js fayln e
@@ -36,7 +38,16 @@ import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
+
+  /**
+   * BrowserRouter  react-router-dom -i himnakan  baxadrichneric mekna  vor@ integrum eqn
+   * mer  projecti amenaglxavor  hatvacum vortexic vor sksvume ahxatel mer cragir@
+   * BrowserRouter - i mijocov  katarvum e ejeri mijev  routingn  kam navigacian
+   *
+   * **/
+  <BrowserRouter>
     <App/>
+  </BrowserRouter>
   // </React.StrictMode>
 );
 
