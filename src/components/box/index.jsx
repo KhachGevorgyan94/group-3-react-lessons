@@ -1,32 +1,76 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import './style.scss'
 
-class Box extends React.Component {
-  //    this.props  {title={''} description={''}}
+const Box = ({title, description}) => {  // {title, description} = props
+  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [inputValue, setInputValue] = useState('')
+  const [inputViewValue, setInputViewValue] = useState('')
 
-  constructor(props) {
-    console.log(props, 'props')
-    super();
+  const toggleDarkMode = () => {
+    console.log(isDarkMode)
+    setIsDarkMode(!isDarkMode)
   }
-  /**
-   * Class componentin karox eqn poxancel  parametrner  ayl componentic
-   *
-   * ev ayd  poxancvac parametrnern hasaneli en linum  this.props  objecti mej
-   * ayd ogject@  karox eqn tesnel  constructori  mej  ver@ nshvac tarberakum
-   * aysinqn  inche stacvum, argumentov haytararvac parametrneri anunner@  ev  propsic  vercnelu anunner@ petq e  nujyn@ linen
-   *
-   *
-   * **/
-  render() {
-    return <div className='P-box'>
-      <i className={`icon ${this.props.icon}`}/>
-      <h3>{this.props.title}</h3>
-      <p>{this.props.description}</p>
 
-      {/*{this.props.children}*/}
-    </div>
+  const handleChange = (e) => {
+    setInputValue(e.target.value)
+
   }
+
+  const showText = () => {
+    setInputViewValue(inputValue)
+  }
+
+  useEffect(() => {
+
+  }, [])
+
+
+  return <div className={`P-box ${isDarkMode ?
+    'P-dark-mode' : ''}`}>
+    <h3>{title} </h3>
+    {description ? <p>{description}</p> : null}
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, odit.</span>
+    <label className='P-checkbox G-flex G-align-center'>
+      <input
+        type="checkbox"
+        onChange={toggleDarkMode}
+        value={isDarkMode}
+      />
+      <p>Dark mode</p>
+    </label>
+
+    <input type="text" onChange={handleChange} value={inputValue}/>
+    <button onClick={showText}>Click me</button>
+
+    {inputViewValue ? <p>{inputViewValue}</p> : null}
+  </div>
 }
 
+
+// class Box extends React.Component {
+//   state = {
+//     isDarkMode: false
+//   }
+//
+//   toggleDarMode = (e) => {
+//     console.log(e.target.value)
+//     this.setState({isDarkMode: !this.state.isDarkMode})
+//   }
+//
+//   render() {
+//     return <div className={`P-box ${this.state.isDarkMode ?
+//       'P-dark-mode' : ''}
+//       `}>
+//       <h3>{this.props.title} </h3>
+//       <p>{this.props.description}</p>
+//       <label className='P-checkbox G-flex G-align-center'>
+//         <input onChange={this.toggleDarMode}
+//                type="checkbox"
+//                value={this.state.isDarkMode}/>
+//         <p>Dark mode</p>
+//       </label>
+//     </div>
+//   }
+// }
+
 export default Box
-
-
