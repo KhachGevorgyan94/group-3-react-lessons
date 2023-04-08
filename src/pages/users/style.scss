@@ -1,0 +1,11 @@
+
+.P-users-list {
+  display   : flex;
+  flex-wrap : wrap;
+}
+
+.P-user-box {
+  width  : 20%;
+  border : 1px solid black;
+  margin : 10px;
+}

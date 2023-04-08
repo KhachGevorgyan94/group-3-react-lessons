@@ -1,0 +1,34 @@
+.P-box {
+    padding       : 15px;
+    border-radius : 15px;
+    box-shadow    : 0 0 2px 2px rgba(0, 0, 0, 0.3);
+    margin        : 15px;
+    width         : 25%;
+  
+  
+    h3 {
+      color : red;
+    }
+  
+    p {
+      margin-top    : 15px;
+      color         : black;
+      margin-bottom : 10px;
+    }
+  
+    &.P-dark-mode {
+      background-color : #1a253b;
+  
+      h3, span, p {
+        color : white;
+      }
+    }
+  
+    .P-checkbox {
+      p {
+        margin : 0;
+      }
+    }
+  }
+  
+  
