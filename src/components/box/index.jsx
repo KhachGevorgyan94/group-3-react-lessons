@@ -5,25 +5,17 @@ const Box = ({title, description}) => {  // {title, description} = props
   const [isDarkMode, setIsDarkMode] = useState(false)
   const [inputValue, setInputValue] = useState('')
   const [inputViewValue, setInputViewValue] = useState('')
-
   const toggleDarkMode = () => {
     console.log(isDarkMode)
     setIsDarkMode(!isDarkMode)
   }
-
   const handleChange = (e) => {
     setInputValue(e.target.value)
-
   }
 
   const showText = () => {
     setInputViewValue(inputValue)
   }
-
-  useEffect(() => {
-
-  }, [])
-
 
   return <div className={`P-box ${isDarkMode ?
     'P-dark-mode' : ''}`}>
