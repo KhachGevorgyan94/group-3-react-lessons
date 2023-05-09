@@ -1,9 +1,7 @@
 import {combineReducers, createStore} from "redux";
-import userReducer from "./reducers/user-reducer";
-import productReducer from "./reducers/product-reducer";
+import randomNumbersReducer from "./reducers/random-numbers/random-numbers-reducer";
 const rootReducer = combineReducers({
-  productReducer, //productReducer = productReducer
-  userReducer
+  randomNumbersReducer
 })
 export const store = createStore(rootReducer)
 

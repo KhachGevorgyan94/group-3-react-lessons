@@ -1,18 +1,14 @@
 import React, {useEffect} from 'react';
-import {useSelector} from "react-redux";
-import {CreateUser} from "./components/create-user";
-import {UserList} from "./components/user-list";
-import ProductList from "./components/product-list";
-
+import Header from "./components/header";
+import NumbersList from "./components/numbers-list";
 
 function App() {
 
   return (
-    <div>
-      <CreateUser/>
-      <UserList/>
-      <ProductList/>
-    </div>
+    <>
+      <Header/>
+      <NumbersList/>
+    </>
   );
 }
 

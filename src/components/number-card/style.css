@@ -1,0 +1,10 @@
+.P-padding-box {
+    width   : 25%;
+    padding : 10px;
+}
+
+.P-number-card {
+    background-color : coral;
+    padding          : 15px;
+    min-height       : 200px;
+}
