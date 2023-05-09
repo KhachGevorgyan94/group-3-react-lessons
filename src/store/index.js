@@ -1,8 +1,6 @@
 import {combineReducers, createStore} from "redux";
-import randomNumbersReducer from "./reducers/random-numbers/random-numbers-reducer";
-const rootReducer = combineReducers({
-  randomNumbersReducer
-})
+
+const rootReducer = combineReducers({})
 export const store = createStore(rootReducer)
 
 // userReducer => state = {userList: []}
