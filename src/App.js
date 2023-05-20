@@ -1,12 +1,17 @@
-import React, {useEffect, useState} from 'react';
-import AdminComponent from "./components/admin-component";
-import GuestComponent from "./components/guest-component";
+import React, {useEffect, useRef, useState} from 'react';
+import SliderComponent from "./components/sliderComponent";
+import UseRefComponent from "./components/useRefComponent";
+import ProductBoxContainer from "./components/productBoxContainer";
+import UseMemoBox from "./components/productBoxContainer/useMemoBox";
+import UseCallBackBox from "./components/productBoxContainer/useCallBackBox";
 
 function App() {
-
-  const token = localStorage.getItem('test-token')
-
-  return token ? <AdminComponent/> : <GuestComponent/>
+return <>
+  {/*<UseRefComponent/>*/}
+  {/*<ProductBoxContainer/>*/}
+  {/*<UseMemoBox/>*/}
+  <UseCallBackBox/>
+</>
 }
 
 export default App;

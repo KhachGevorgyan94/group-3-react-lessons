@@ -26,3 +26,11 @@ code {
     border-radius    : 15px;
     height           : calc(100vh - 30px);
 }
+
+.P-chat-content {
+    height : 100px;
+    width  : 100px;
+    border : 1px solid red;
+    overflow: hidden;
+    overflow-y: auto;
+}
