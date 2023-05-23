@@ -18,3 +18,7 @@ export default function userReducer(state = initialState, action) {
   }
 
 }
+
+export const addUser = (data)=>{
+
+}

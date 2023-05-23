@@ -1,8 +1,10 @@
 import {useSelector} from "react-redux";
 
 export const UserList = () => {
-
-  const userList = useSelector(state => state.userReducer.userList)
+  // redux
+  // const userList = useSelector(state => state.userReducer.userList)
+  //  redux toolit  nuyn tarbaerakov
+  const userList = useSelector(state => state.userSlice.userList)
 
   return <div className='P-user-list'>
     {userList.length ? userList.map((item, index) => {

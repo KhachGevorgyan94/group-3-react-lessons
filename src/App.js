@@ -11,7 +11,7 @@ function App() {
     <div>
       <CreateUser/>
       <UserList/>
-      <ProductList/>
+      {/*<ProductList/>*/}
     </div>
   );
 }

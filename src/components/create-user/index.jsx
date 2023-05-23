@@ -1,8 +1,9 @@
 import {useState} from "react";
 import {useDispatch} from "react-redux";
+import {addUser} from "../../store/slices/user-slice";
 
 export const CreateUser = () => {
-  const [textValue, setTextValue] = useState()
+  const [textValue, setTextValue] = useState('')
 
   const dispatch = useDispatch()
 
@@ -11,7 +12,10 @@ export const CreateUser = () => {
   }
 
   const handleClick = () => {
-    dispatch({type: 'ADD_USER', payload: textValue})
+    // redux
+    // dispatch({type: 'ADD_USER', payload: textValue})
+    // redux toolkit
+    dispatch(addUser(textValue))
     setTextValue('')
   }
 
@@ -20,7 +24,6 @@ export const CreateUser = () => {
     <input type="text"
            onChange={handleChange}
            value={textValue}
-           defaultValue={textValue}
            placeholder={'user name'}/>
     <button onClick={handleClick}>Create user</button>
   </div>
